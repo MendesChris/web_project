@@ -1,0 +1,158 @@
+<html >
+
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/cartnav.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+    <script type="text/javascript" src="js/validation.js"></script> 
+    <script type="text/javascript" src="js/cartnav.js"></script>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/cart.css">
+  <title>Basket</title>
+</head>
+<header>
+  <div class="top-bar background-white">
+        <div class="line">
+          <div class="s-12 m-6 l-6">
+            <div class="top-bar-contact">
+              <p class="text-size-12">Contate-nos: 0800 200 200 | <a class="text-orange-hover" href="mailto:jofruits@frutaria.com">jofruits@frutaria.com</a></p>
+            </div>
+          </div>
+  <nav class="background-white background-primary-hightlight">
+        <div class="line">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo"><img src="img/logo-jofruits.png" alt=""></a>
+          </div>
+          <div class="top-nav s-12 l-10">
+            <p class="nav-text"></p>
+            <ul class="right chevron">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="products.html">Produtos</a></li>
+              <!--<li><a>Services</a>
+                <ul>
+                  <li><a>Service 1</a>
+                    <ul>
+                      <li><a>Service 1 A</a></li>
+                      <li><a>Service 1 B</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Service 2</a></li>
+                </ul>-->
+              </li>
+              <li><a href="about.html">Sobre</a></li>
+              <!--<li><a href="gallery.html">Gallery</a></li>-->
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav>
+  <div class="container">
+</header>
+
+<body>
+  <main>
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Código promocional</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Aplicar</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Preço</li>
+          <li class="quantity">Quantidade</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+           <br><br>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">0.5 Kg</span> Maçã Argentina</strong></h1>
+            <!--<p><strong>Navy, Size 18</strong></p>
+            <p>Product Code - 232321939</p>-->
+          </div>
+        </div>
+        <div class="price">4,00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">4,00</div>
+        <div class="remove">
+          <button>Remover</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <br><br>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1 Kg</span> Banana da Terra</strong></h1>
+            <!--<p><strong>Navy, Size 10</strong></p>
+            <p>Product Code - 232321939</p>-->
+          </div>
+        </div>
+        <div class="price">2,00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">6,00</div>
+        <div class="remove">
+          <button>Remover</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Itens na sacola
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">8,00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+            <option value="0" selected="selected">Selecione a opção de pagamento</option>
+            <option value="collection">Crédito</option>
+            <option value="first-class">Débito</option>
+            
+          </select>
+          </div>
+          <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+            <option value="0" selected="selected">Selecione o endereço de entrega</option>
+            <option value="collection">endereço 1</option>
+            <option value="first-class">endereço 2</option>
+            
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">8,00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Finalizar Compra</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+</body>
+
+</html>
